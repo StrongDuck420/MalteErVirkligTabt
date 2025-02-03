@@ -13,7 +13,7 @@ func _ready():
 	label2.text = "Altitude: 0"
 	label3.text = "Fuel: 100%"
 
-func _physics_process(delta):
+func _physics_process(_delta):
 	# Get the CharacterBody2D's velocity along the y-axis
 	var fall_speed = character_body.velocity.y
 

@@ -1,12 +1,12 @@
 extends Control
 
-
+@export var Main_scene: String = "res://Main.tscn"
 
 
 
 
 func _on_play_pressed() -> void:
-	get_tree().change_scene_to_file("res://Main.tscn")
+	get_tree().change_scene_to_file(Main_scene)
 	
 	
 	

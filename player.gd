@@ -21,8 +21,8 @@ func _physics_process(_delta: float) -> void:
 		else:
 			pass
 		Fuel -= 5 * _delta
-		
-		
+
+
 	if velocity.y < min_fall_speed:
 		velocity.y = min_fall_speed
 
@@ -47,15 +47,21 @@ func _physics_process(_delta: float) -> void:
 		velocity = velocity.normalized() * max_velocity
 
 	var collision = move_and_collide(velocity * _delta)
-
+	
 	if collision:
 		var collider = collision.get_collider()
 		if collider is PhysicsBody2D:
 			print("Collided with:", collider)
-			teleport()
-
-func teleport():
-	position = teleport_position
+			speecz()
+	
+	
+func speecz ():
 	velocity = Vector2.ZERO  # Reset speed upon teleportation
 	rotation = 0.0  # Reset rotation to default (facing up)
-	rotation_speed = 0.0  # Reset rotation speed
+	rotation_speed = 0.0
+	
+	if velocity.y < 250:
+		get_tree().change_scene_to_file("res://YouLost_UI.tscn")
+
+	else:
+		get_tree().change_scene_to_file("res://YOUWON_UI.tscn")

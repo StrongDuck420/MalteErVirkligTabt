@@ -7,6 +7,7 @@ extends CharacterBody2D
 @export var max_rotation_speed: float = 4.0
 @export var min_fall_speed: float = 200.0
 @export var max_velocity: float = 800.0  # Max speed limit
+@export var Fuel = 100
 
 var rotation_speed: float = 0.0
 
@@ -15,15 +16,28 @@ func _physics_process(_delta: float) -> void:
 
 	if Input.is_action_pressed("main rocket"):
 		var direction = Vector2.UP.rotated(rotation)
-		velocity += direction * speed * _delta
-
+		if Fuel > 0:
+			velocity += direction * speed * _delta
+		else:
+			pass
+		Fuel -= 5 * _delta
+		
+		
 	if velocity.y < min_fall_speed:
 		velocity.y = min_fall_speed
 
 	if Input.is_action_pressed("left rocket"):
-		rotation_speed -= rotation_acceleration * _delta
+		if Fuel > 0:
+			rotation_speed -= rotation_acceleration * _delta
+		else:
+			pass
+		Fuel -= 5 * _delta
 	elif Input.is_action_pressed("right rocket"):
-		rotation_speed += rotation_acceleration * _delta
+		if Fuel > 0:
+			rotation_speed += rotation_acceleration * _delta
+		else:
+			pass
+		Fuel -= 5 * _delta
 
 	rotation_speed = clamp(rotation_speed, -max_rotation_speed, max_rotation_speed)
 	rotation += rotation_speed * _delta
@@ -45,4 +59,3 @@ func teleport():
 	velocity = Vector2.ZERO  # Reset speed upon teleportation
 	rotation = 0.0  # Reset rotation to default (facing up)
 	rotation_speed = 0.0  # Reset rotation speed
-

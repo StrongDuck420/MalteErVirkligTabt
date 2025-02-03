@@ -18,10 +18,10 @@ scale = Vector2(0.30862, 0.28673)
 
 [node name="Node2D" parent="." instance=ExtResource("2_w8ku3")]
 top_level = true
-position = Vector2(3069, 731)
+position = Vector2(3165, -226)
 
 [node name="Node2D2" parent="." instance=ExtResource("3_nxigg")]
-position = Vector2(3954, -4211)
+position = Vector2(3859, -5671)
 
 [node name="CanvasLayer" type="CanvasLayer" parent="."]
 
@@ -36,3 +36,11 @@ layout_mode = 2
 [node name="Label" type="Label" parent="CanvasLayer/MarginContainer/VBoxContainer"]
 layout_mode = 2
 text = "Speed = 0"
+
+[node name="Label2" type="Label" parent="CanvasLayer/MarginContainer/VBoxContainer"]
+layout_mode = 2
+text = "altitude = idfk"
+
+[node name="Label3" type="Label" parent="CanvasLayer/MarginContainer/VBoxContainer"]
+layout_mode = 2
+text = "energi = 100%"

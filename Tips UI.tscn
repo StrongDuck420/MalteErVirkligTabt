@@ -1,0 +1,62 @@
+[gd_scene load_steps=4 format=3 uid="uid://dfhvna08qnttf"]
+
+[ext_resource type="Script" path="res://tips_ui.gd" id="1_nu42r"]
+[ext_resource type="Texture2D" uid="uid://c6fg3i1cvxf1y" path="res://R.jpg" id="2_rv416"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_tx67p"]
+font_size = 20
+font_color = Color(0, 0, 0, 1)
+
+[node name="Control" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_top = 1.0
+offset_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_nu42r")
+
+[node name="Sprite2D2" type="Sprite2D" parent="."]
+position = Vector2(576, 324)
+scale = Vector2(0.3, 0.3)
+texture = ExtResource("2_rv416")
+
+[node name="MarginContainer" type="MarginContainer" parent="."]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -229.0
+offset_top = -94.0
+offset_right = 229.0
+offset_bottom = 94.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="VBoxContainer" type="VBoxContainer" parent="MarginContainer"]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="MarginContainer/VBoxContainer"]
+layout_mode = 2
+text = "This is a copy of the game Rocket lander 
+
+the game is about you need tp land the apollo on the moon 
+with the help of the controls. 1 which increases the boost
+1 which decreases the boost. 
+2 buttons which can rotate the apollo"
+label_settings = SubResource("LabelSettings_tx67p")
+
+[node name="Return" type="Button" parent="MarginContainer/VBoxContainer"]
+layout_mode = 2
+text = "Return"
+
+[node name="1920x1200-lunar-lander-apollo-program-apollo-11-apollo-lunar-module-moon" type="Sprite2D" parent="MarginContainer/VBoxContainer"]
+position = Vector2(704, -82)
+rotation = 0.747189
+scale = Vector2(0.14, 0.15)
+
+[connection signal="pressed" from="MarginContainer/VBoxContainer/Return" to="." method="_on_button_pressed"]

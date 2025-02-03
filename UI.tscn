@@ -1,0 +1,81 @@
+[gd_scene load_steps=4 format=3 uid="uid://d3sfj7ctkep2o"]
+
+[ext_resource type="Script" path="res://ui.gd" id="1_r84kv"]
+[ext_resource type="Texture2D" uid="uid://c6fg3i1cvxf1y" path="res://R.jpg" id="2_tttbw"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_4qnh4"]
+font_size = 80
+font_color = Color(0, 0, 0, 1)
+
+[node name="Control" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_top = -1.0
+offset_bottom = -1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_r84kv")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(576, 324)
+scale = Vector2(0.3, 0.3)
+texture = ExtResource("2_tttbw")
+
+[node name="MarginContainer" type="MarginContainer" parent="."]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -64.5
+offset_top = -50.5
+offset_right = 64.5
+offset_bottom = 50.5
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="VBoxContainer" type="VBoxContainer" parent="MarginContainer"]
+light_mask = 2
+layout_mode = 2
+alignment = 1
+
+[node name="Play" type="Button" parent="MarginContainer/VBoxContainer"]
+layout_mode = 2
+text = "Play"
+
+[node name="Tips" type="Button" parent="MarginContainer/VBoxContainer"]
+layout_mode = 2
+text = "Tips"
+
+[node name="Quit" type="Button" parent="MarginContainer/VBoxContainer"]
+layout_mode = 2
+text = "Quit"
+
+[node name="MarginContainer2" type="MarginContainer" parent="."]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -53.5
+offset_top = 100.0
+offset_right = 53.5
+offset_bottom = 23.0
+grow_horizontal = 2
+rotation = 0.00313721
+
+[node name="VBoxContainer2" type="VBoxContainer" parent="MarginContainer2"]
+layout_mode = 2
+alignment = 1
+
+[node name="Label" type="Label" parent="MarginContainer2/VBoxContainer2"]
+layout_mode = 2
+size_flags_horizontal = 4
+text = "Apollo"
+label_settings = SubResource("LabelSettings_4qnh4")
+
+[connection signal="pressed" from="MarginContainer/VBoxContainer/Play" to="." method="_on_play_pressed"]
+[connection signal="pressed" from="MarginContainer/VBoxContainer/Tips" to="." method="_on_tips_pressed"]
+[connection signal="pressed" from="MarginContainer/VBoxContainer/Quit" to="." method="_on_quit_pressed"]

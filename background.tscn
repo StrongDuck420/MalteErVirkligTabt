@@ -1,0 +1,262 @@
+[gd_scene load_steps=2 format=3 uid="uid://b0364bjft4tp5"]
+
+[ext_resource type="Texture2D" uid="uid://b2vbt8r72cm6a" path="res://photo-1475274047050-1d0c0975c63e.jpeg" id="1_jrooc"]
+
+[node name="Node2D" type="Node2D"]
+position = Vector2(1573, -912)
+
+[node name="Sprite2D22" type="Sprite2D" parent="."]
+position = Vector2(-3207, 4673)
+texture = ExtResource("1_jrooc")
+
+[node name="Sprite2D2" type="Sprite2D" parent="."]
+position = Vector2(-342, -361)
+texture = ExtResource("1_jrooc")
+
+[node name="Sprite2D3" type="Sprite2D" parent="."]
+position = Vector2(-335, 1208)
+texture = ExtResource("1_jrooc")
+
+[node name="Sprite2D4" type="Sprite2D" parent="."]
+position = Vector2(1506, 1220)
+texture = ExtResource("1_jrooc")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(1499, -349)
+texture = ExtResource("1_jrooc")
+
+[node name="Sprite2D5" type="Sprite2D" parent="."]
+position = Vector2(6337, -342)
+texture = ExtResource("1_jrooc")
+
+[node name="Sprite2D7" type="Sprite2D" parent="."]
+position = Vector2(-8076, -368)
+texture = ExtResource("1_jrooc")
+
+[node name="Sprite2D8" type="Sprite2D" parent="."]
+position = Vector2(4496, -354)
+texture = ExtResource("1_jrooc")
+
+[node name="Sprite2D9" type="Sprite2D" parent="."]
+position = Vector2(6344, 1227)
+texture = ExtResource("1_jrooc")
+
+[node name="Sprite2D10" type="Sprite2D" parent="."]
+position = Vector2(-9917, -380)
+texture = ExtResource("1_jrooc")
+
+[node name="Sprite2D12" type="Sprite2D" parent="."]
+position = Vector2(-5079, -373)
+texture = ExtResource("1_jrooc")
+
+[node name="Sprite2D13" type="Sprite2D" parent="."]
+position = Vector2(-3238, -361)
+texture = ExtResource("1_jrooc")
+
+[node name="Sprite2D14" type="Sprite2D" parent="."]
+position = Vector2(-9886, 4654)
+texture = ExtResource("1_jrooc")
+
+[node name="Sprite2D15" type="Sprite2D" parent="."]
+position = Vector2(-3214, 3104)
+texture = ExtResource("1_jrooc")
+
+[node name="Sprite2D16" type="Sprite2D" parent="."]
+position = Vector2(-8052, 3097)
+texture = ExtResource("1_jrooc")
+
+[node name="Sprite2D17" type="Sprite2D" parent="."]
+position = Vector2(4503, 1215)
+texture = ExtResource("1_jrooc")
+
+[node name="Sprite2D6" type="Sprite2D" parent="."]
+position = Vector2(1523, 3116)
+texture = ExtResource("1_jrooc")
+
+[node name="Sprite2D11" type="Sprite2D" parent="."]
+position = Vector2(-8069, 1201)
+texture = ExtResource("1_jrooc")
+
+[node name="Sprite2D18" type="Sprite2D" parent="."]
+position = Vector2(-5072, 1196)
+texture = ExtResource("1_jrooc")
+
+[node name="Sprite2D19" type="Sprite2D" parent="."]
+position = Vector2(-3231, 1208)
+texture = ExtResource("1_jrooc")
+
+[node name="Sprite2D20" type="Sprite2D" parent="."]
+position = Vector2(-5055, 3092)
+texture = ExtResource("1_jrooc")
+
+[node name="Sprite2D21" type="Sprite2D" parent="."]
+position = Vector2(-9910, 1189)
+texture = ExtResource("1_jrooc")
+
+[node name="Sprite2D23" type="Sprite2D" parent="."]
+position = Vector2(-5048, 4661)
+texture = ExtResource("1_jrooc")
+
+[node name="Sprite2D24" type="Sprite2D" parent="."]
+position = Vector2(4527, 4680)
+texture = ExtResource("1_jrooc")
+
+[node name="Sprite2D25" type="Sprite2D" parent="."]
+position = Vector2(6368, 4692)
+texture = ExtResource("1_jrooc")
+
+[node name="Sprite2D26" type="Sprite2D" parent="."]
+position = Vector2(4520, 3111)
+texture = ExtResource("1_jrooc")
+
+[node name="Sprite2D27" type="Sprite2D" parent="."]
+position = Vector2(6361, 3123)
+texture = ExtResource("1_jrooc")
+
+[node name="Sprite2D28" type="Sprite2D" parent="."]
+position = Vector2(-8045, 4666)
+texture = ExtResource("1_jrooc")
+
+[node name="Sprite2D29" type="Sprite2D" parent="."]
+position = Vector2(-9893, 3085)
+texture = ExtResource("1_jrooc")
+
+[node name="Sprite2D30" type="Sprite2D" parent="."]
+position = Vector2(-311, 4673)
+texture = ExtResource("1_jrooc")
+
+[node name="Sprite2D31" type="Sprite2D" parent="."]
+position = Vector2(1530, 4685)
+texture = ExtResource("1_jrooc")
+
+[node name="Sprite2D32" type="Sprite2D" parent="."]
+position = Vector2(-318, 3104)
+texture = ExtResource("1_jrooc")
+
+[node name="Sprite2D22" type="Sprite2D" parent="Sprite2D32"]
+position = Vector2(-2928, -5435.5)
+texture = ExtResource("1_jrooc")
+
+[node name="Sprite2D2" type="Sprite2D" parent="Sprite2D32"]
+position = Vector2(-63, -10469.5)
+texture = ExtResource("1_jrooc")
+
+[node name="Sprite2D3" type="Sprite2D" parent="Sprite2D32"]
+position = Vector2(-56, -8900.5)
+texture = ExtResource("1_jrooc")
+
+[node name="Sprite2D4" type="Sprite2D" parent="Sprite2D32"]
+position = Vector2(1785, -8888.5)
+texture = ExtResource("1_jrooc")
+
+[node name="Sprite2D" type="Sprite2D" parent="Sprite2D32"]
+position = Vector2(1778, -10457.5)
+texture = ExtResource("1_jrooc")
+
+[node name="Sprite2D5" type="Sprite2D" parent="Sprite2D32"]
+position = Vector2(6616, -10450.5)
+texture = ExtResource("1_jrooc")
+
+[node name="Sprite2D7" type="Sprite2D" parent="Sprite2D32"]
+position = Vector2(-7797, -10476.5)
+texture = ExtResource("1_jrooc")
+
+[node name="Sprite2D8" type="Sprite2D" parent="Sprite2D32"]
+position = Vector2(4775, -10462.5)
+texture = ExtResource("1_jrooc")
+
+[node name="Sprite2D9" type="Sprite2D" parent="Sprite2D32"]
+position = Vector2(6623, -8881.5)
+texture = ExtResource("1_jrooc")
+
+[node name="Sprite2D10" type="Sprite2D" parent="Sprite2D32"]
+position = Vector2(-9638, -10488.5)
+texture = ExtResource("1_jrooc")
+
+[node name="Sprite2D12" type="Sprite2D" parent="Sprite2D32"]
+position = Vector2(-4800, -10481.5)
+texture = ExtResource("1_jrooc")
+
+[node name="Sprite2D13" type="Sprite2D" parent="Sprite2D32"]
+position = Vector2(-2959, -10469.5)
+texture = ExtResource("1_jrooc")
+
+[node name="Sprite2D14" type="Sprite2D" parent="Sprite2D32"]
+position = Vector2(-9607, -5454.5)
+texture = ExtResource("1_jrooc")
+
+[node name="Sprite2D15" type="Sprite2D" parent="Sprite2D32"]
+position = Vector2(-2935, -7004.5)
+texture = ExtResource("1_jrooc")
+
+[node name="Sprite2D16" type="Sprite2D" parent="Sprite2D32"]
+position = Vector2(-7773, -7011.5)
+texture = ExtResource("1_jrooc")
+
+[node name="Sprite2D17" type="Sprite2D" parent="Sprite2D32"]
+position = Vector2(4782, -8893.5)
+texture = ExtResource("1_jrooc")
+
+[node name="Sprite2D6" type="Sprite2D" parent="Sprite2D32"]
+position = Vector2(1802, -6992.5)
+texture = ExtResource("1_jrooc")
+
+[node name="Sprite2D11" type="Sprite2D" parent="Sprite2D32"]
+position = Vector2(-7790, -8907.5)
+texture = ExtResource("1_jrooc")
+
+[node name="Sprite2D18" type="Sprite2D" parent="Sprite2D32"]
+position = Vector2(-4793, -8912.5)
+texture = ExtResource("1_jrooc")
+
+[node name="Sprite2D19" type="Sprite2D" parent="Sprite2D32"]
+position = Vector2(-2952, -8900.5)
+texture = ExtResource("1_jrooc")
+
+[node name="Sprite2D20" type="Sprite2D" parent="Sprite2D32"]
+position = Vector2(-4776, -7016.5)
+texture = ExtResource("1_jrooc")
+
+[node name="Sprite2D21" type="Sprite2D" parent="Sprite2D32"]
+position = Vector2(-9631, -8919.5)
+texture = ExtResource("1_jrooc")
+
+[node name="Sprite2D23" type="Sprite2D" parent="Sprite2D32"]
+position = Vector2(-4769, -5447.5)
+texture = ExtResource("1_jrooc")
+
+[node name="Sprite2D24" type="Sprite2D" parent="Sprite2D32"]
+position = Vector2(4806, -5428.5)
+texture = ExtResource("1_jrooc")
+
+[node name="Sprite2D25" type="Sprite2D" parent="Sprite2D32"]
+position = Vector2(6647, -5416.5)
+texture = ExtResource("1_jrooc")
+
+[node name="Sprite2D26" type="Sprite2D" parent="Sprite2D32"]
+position = Vector2(4799, -6997.5)
+texture = ExtResource("1_jrooc")
+
+[node name="Sprite2D27" type="Sprite2D" parent="Sprite2D32"]
+position = Vector2(6640, -6985.5)
+texture = ExtResource("1_jrooc")
+
+[node name="Sprite2D28" type="Sprite2D" parent="Sprite2D32"]
+position = Vector2(-7766, -5442.5)
+texture = ExtResource("1_jrooc")
+
+[node name="Sprite2D29" type="Sprite2D" parent="Sprite2D32"]
+position = Vector2(-9614, -7023.5)
+texture = ExtResource("1_jrooc")
+
+[node name="Sprite2D30" type="Sprite2D" parent="Sprite2D32"]
+position = Vector2(-32, -5435.5)
+texture = ExtResource("1_jrooc")
+
+[node name="Sprite2D31" type="Sprite2D" parent="Sprite2D32"]
+position = Vector2(1809, -5423.5)
+texture = ExtResource("1_jrooc")
+
+[node name="Sprite2D32" type="Sprite2D" parent="Sprite2D32"]
+position = Vector2(-39, -7004.5)
+texture = ExtResource("1_jrooc")

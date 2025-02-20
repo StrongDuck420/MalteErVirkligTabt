@@ -23,6 +23,9 @@ position = Vector2(3165, -226)
 [node name="Node2D2" parent="." instance=ExtResource("3_nxigg")]
 position = Vector2(3859, -5671)
 
+[node name="Node2D2" parent="Node2D2" instance=ExtResource("3_nxigg")]
+position = Vector2(19065, -14)
+
 [node name="CanvasLayer" type="CanvasLayer" parent="."]
 
 [node name="MarginContainer" type="MarginContainer" parent="CanvasLayer"]

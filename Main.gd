@@ -21,12 +21,12 @@ func _physics_process(_delta):
 	
 	# Only display speed if falling (positive y velocity)
 	if fall_speed > 0:
-		label.text = "Fall Speed: " + str(round(fall_speed)) + " m/s"
+		label.text = "Fall Speed: " + str(round(fall_speed) / 10) + " m/s"
 	else:
 		label.text = "Fall Speed: 0 px/s"
 		
 	if CharacterPlacement > 0:
-		label2.text = "Altitude: " + str(round(CharacterPlacement)) + " m"
+		label2.text = "Altitude: " + str(round(CharacterPlacement) / 10) + " m"
 	else:
 		label2.text = "you hit the ground"
 	

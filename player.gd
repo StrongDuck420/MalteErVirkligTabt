@@ -56,12 +56,12 @@ func _physics_process(_delta: float) -> void:
 	
 	
 func speecz ():
+	if velocity.y > 250:
+		get_tree().change_scene_to_file("res://YouLost_UI.tscn")
+		print("velocity is less than 250 and you lost?")
+	else:
+		get_tree().change_scene_to_file("res://YOUWON_UI.tscn")
+		print("VELOCITY IS MORE THAN 250 AND YOU WON?")
 	velocity = Vector2.ZERO  # Reset speed upon teleportation
 	rotation = 0.0  # Reset rotation to default (facing up)
 	rotation_speed = 0.0
-	
-	if velocity.y < 250:
-		get_tree().change_scene_to_file("res://YouLost_UI.tscn")
-
-	else:
-		get_tree().change_scene_to_file("res://YOUWON_UI.tscn")
